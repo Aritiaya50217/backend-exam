@@ -20,8 +20,8 @@ output = number can not be negative
 class Solution:
 
     def find_tailing_zeroes(self, number: int) -> int | str:
-       if number < 0:
-        return "number can not be negative"
+        if number < 0:
+            return "number can not be negative"
 
         count = 0 
         divisor = 5
@@ -31,3 +31,7 @@ class Solution:
             divisor *=5
         return count
 
+
+sol = Solution()
+
+print(sol.find_tailing_zeroes(7))
